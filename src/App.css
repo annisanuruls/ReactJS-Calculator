@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+body{
+  display: flex;
+  justify-content: center;
+  height: 97vh;
+  align-items: center;
+  background-color: rgb(93, 187, 219);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  background-color: #e0e4e3;
+  width: 250px;
+  height: 410px;
+  padding: 20px;
+  box-shadow: inset -10px 0px 10px 0px #999b9a , inset 10px 0px 10px 0px white, 5px 20px 20px #707070;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.display{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #6a706e;
+  border-radius: 5px;
+  box-shadow: inset 2px 5px 5px 0px #212622;
+  margin: 5px 0px 20px;
+}
+
+.display input{
+  border: 0;
+  background-color: transparent;
   color: white;
+  text-align: right;
+  height: 40px;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 3px 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.display ::-webkit-input-placeholder{
+  color: white;
+  font-family: 'Chakra Petch', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row{
+  display: flex;
+  justify-content: center;
+}
+
+#zero{
+  width: 44%;
+}
+
+button{
+  width: 20%;
+  height: 50px;
+  margin: 5px;
+  border-radius: 10px;
+  border: 1px solid #6a706e;
+  border-bottom: 0;
+  box-shadow: 0px 2px 3px #212622 , inset 0px -3px 0px 0px #e0e4e3;
+  background-color: #999b9a;
+  transition: all 0.1s ease-out;
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #343434;
+}
+
+button:active{
+  transform: translateY(3px);
+  border-bottom: 1px solid #6a706e;
+  box-shadow: none;
+}
+
+p{
+  font-family: 'Chakra Petch', sans-serif;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: 500;
 }
