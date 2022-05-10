@@ -78,6 +78,13 @@ class App extends React.Component{
               history: this.state.currentNumb.replace('-', '')
           })
       }
+
+      if(this.state.currentNumb === '0'){
+        this.setState({
+            currentNumb: this.state.currentNumb.replace('0', '-'),
+            history: this.state.currentNumb.replace('0', '-')
+        })
+      }
   }
 
   operationHandle(e){
